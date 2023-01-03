@@ -1,0 +1,322 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://surface_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/Gameboy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_05.png" type="Texture" id=3]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_06.png" type="Texture" id=4]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_07.png" type="Texture" id=5]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_15.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Backgrounds/set3_background.png" type="Texture" id=7]
+[ext_resource path="res://Scenes/Coin.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Assets/Coins/gold_1.png" type="Texture" id=10]
+[ext_resource path="res://Scripts/HUD.gd" type="Script" id=11]
+[ext_resource path="res://Assets/Backgrounds/set3_tiles.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Backgrounds/set1_tiles.png" type="Texture" id=13]
+[ext_resource path="res://Scenes/Enemy.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Assets/Musics/Retro Beat.ogg" type="AudioStream" id=15]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_16.png" type="Texture" id=16]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_03.png" type="Texture" id=17]
+[ext_resource path="res://Assets/surface_pack/One-way/tileBlue_04.png" type="Texture" id=18]
+[ext_resource path="res://Assets/UI/arrow-UP.png" type="Texture" id=19]
+
+[sub_resource type="TileSet" id=1]
+0/name = "tileBlue_03.png 0"
+0/texture = ExtResource( 17 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "tileBlue_04.png 1"
+1/texture = ExtResource( 18 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "tileBlue_05.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "tileBlue_06.png 3"
+3/texture = ExtResource( 4 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "tileBlue_07.png 4"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "tileBlue_15.png 5"
+5/texture = ExtResource( 6 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "tileBlue_16.png 6"
+6/texture = ExtResource( 16 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 96, 32 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1600, 32 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0, 0, 0, 0.27451 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+font_data = ExtResource( 9 )
+
+[node name="Level1" type="Node2D"]
+
+[node name="Solid_TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+collision_layer = 2
+collision_mask = 49
+format = 1
+tile_data = PoolIntArray( 65518, 0, 0, 131054, 0, 0, 131062, 5, 0, 131063, 2, 0, 131064, 2, 0, 131065, 6, 0, 65536, 5, 0, 65537, 6, 0, 196590, 0, 0, 262126, 0, 0, 196612, 5, 0, 196613, 2, 0, 196614, 2, 0, 196615, 2, 0, 196616, 6, 0, 327662, 0, 0, 327676, 5, 0, 327677, 2, 0, 327678, 6, 0, 393198, 0, 0, 458734, 0, 0, 393227, 5, 0, 393228, 2, 0, 393229, 2, 0, 393230, 6, 0, 524271, 1, 0, 524272, 2, 0, 524273, 2, 0, 524274, 2, 0, 524275, 2, 0, 524276, 2, 0, 524277, 2, 0, 524278, 3, 0, 524282, 1, 0, 524283, 2, 0, 524284, 3, 0, 458773, 1, 0, 458774, 2, 0, 458775, 2, 0, 458776, 2, 0, 458777, 3, 0, 589807, 0, 0, 589808, 0, 0, 589809, 0, 0, 589810, 0, 0, 589811, 0, 0, 589812, 0, 0, 589813, 0, 0, 589814, 0, 0, 589815, 2, 0, 589816, 2, 0, 589817, 2, 0, 589818, 0, 0, 589819, 0, 0, 589820, 0, 0, 524306, 1, 0, 524307, 2, 0, 524308, 2, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 655343, 0, 0, 655344, 0, 0, 655345, 0, 0, 655346, 0, 0, 655347, 0, 0, 655348, 0, 0, 655349, 0, 0, 655350, 0, 0, 655351, 0, 0, 655352, 0, 0, 655353, 0, 0, 655354, 0, 0, 655355, 0, 0, 655356, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 720879, 0, 0, 720880, 0, 0, 720881, 0, 0, 720882, 0, 0, 720883, 0, 0, 720884, 0, 0, 720885, 0, 0, 720886, 0, 0, 720887, 0, 0, 720888, 0, 0, 720889, 0, 0, 720890, 0, 0, 720891, 0, 0, 720892, 0, 0, 655378, 0, 0, 655379, 0, 0, 655380, 0, 0, 655381, 0, 0, 655382, 0, 0, 655383, 0, 0, 655384, 0, 0, 655385, 0, 0 )
+
+[node name="One-way_TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+collision_layer = 2
+collision_mask = 49
+format = 1
+tile_data = PoolIntArray( 327667, 5, 0, 327668, 2, 0, 327669, 6, 0, 262164, 1, 0, 262165, 2, 0, 262166, 3, 0, 327700, 0, 0, 327701, 0, 0, 327702, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 0, 0, 458772, 0, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="One-way_TileMap"]
+collision_layer = 2
+collision_mask = 49
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="One-way_TileMap/StaticBody2D"]
+position = Vector2( -736, 288 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="One-way_TileMap/StaticBody2D"]
+position = Vector2( 1376, 288 )
+shape = SubResource( 2 )
+one_way_collision = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 1280, 960 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Sky"]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Particles" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.6, 0.6 )
+motion_mirroring = Vector2( 1152, 864 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Particles"]
+scale = Vector2( 1.8, 1.8 )
+texture = ExtResource( 12 )
+centered = false
+
+[node name="Nearby" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.4, 0.4 )
+motion_mirroring = Vector2( 1088, 816 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Nearby"]
+scale = Vector2( 1.7, 1.7 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="Fallzone" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fallzone"]
+position = Vector2( 1408, 800 )
+shape = SubResource( 3 )
+
+[node name="HUD" type="CanvasLayer" parent="."]
+script = ExtResource( 11 )
+
+[node name="Panel" type="Panel" parent="HUD"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 192.0
+margin_bottom = 96.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="TextureRect" type="TextureRect" parent="HUD"]
+margin_left = 48.0
+margin_top = 40.0
+margin_right = 96.0
+margin_bottom = 88.0
+texture = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Coins" type="Label" parent="HUD"]
+margin_left = 96.0
+margin_top = 32.0
+margin_right = 184.0
+margin_bottom = 96.0
+custom_colors/font_color = Color( 1, 0.8, 0.113725, 1 )
+custom_fonts/font = SubResource( 5 )
+text = "##"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="HUD"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="TouchLeft" type="TouchScreenButton" parent="HUD/Control"]
+position = Vector2( 48, 468 )
+rotation = -1.5708
+scale = Vector2( 0.1, 0.1 )
+normal = ExtResource( 19 )
+action = "move_left"
+
+[node name="TouchRight" type="TouchScreenButton" parent="HUD/Control"]
+position = Vector2( 128, 497 )
+rotation = 1.5708
+scale = Vector2( 0.1, 0.1 )
+normal = ExtResource( 19 )
+action = "move_right"
+
+[node name="TouchJump" type="TouchScreenButton" parent="HUD/Control"]
+position = Vector2( 896, 497 )
+scale = Vector2( 0.1, 0.1 )
+normal = ExtResource( 19 )
+action = "jump"
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 8 )]
+position = Vector2( -160, 224 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 8 )]
+position = Vector2( -512, 32 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 8 )]
+position = Vector2( 192, -160 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 8 )]
+position = Vector2( 832, 352 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 8 )]
+position = Vector2( 1312, 480 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Enemy" parent="Enemies" instance=ExtResource( 14 )]
+position = Vector2( -416, 480 )
+cliff_detection = false
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource( 14 )]
+position = Vector2( -768, 224 )
+direction = 1
+
+[node name="Enemy3" parent="Enemies" instance=ExtResource( 14 )]
+position = Vector2( 1280, 480 )
+direction = 1
+
+[node name="Gameboy" parent="." instance=ExtResource( 2 )]
+position = Vector2( -928, 320 )
+collision_mask = 30
+
+[node name="Camera2D" type="Camera2D" parent="Gameboy"]
+current = true
+limit_left = -1088
+limit_top = -500
+limit_right = 3000
+limit_bottom = 700
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.3
+drag_margin_right = 0.3
+editor_draw_limits = true
+
+[node name="LevelMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+autoplay = true
+
+[connection signal="body_entered" from="Fallzone" to="Gameboy" method="_on_Fallzone_body_entered"]
+[connection signal="coin_collected" from="Coins/Coin" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin2" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin3" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin4" to="HUD" method="_on_coin_collected"]
+[connection signal="coin_collected" from="Coins/Coin5" to="HUD" method="_on_coin_collected"]
