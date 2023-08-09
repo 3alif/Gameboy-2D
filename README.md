@@ -1,6 +1,7 @@
 # Gameboy 2D
-A 2D platformer game developed in [Godot Engine](https://godotengine.org).
 ![Logo of Gameboy 2D game](https://i.ibb.co/MZNFP2v/platform-Char-happy.png)
+
+A 2D platformer game developed in [Godot Engine](https://godotengine.org).
 
 ## Getting Started
 This is a project for learning game development with Godot Engine. These resources will help you getting started:
