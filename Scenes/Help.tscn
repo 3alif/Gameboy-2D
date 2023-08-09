@@ -4,7 +4,7 @@
 [ext_resource path="res://Assets/Fonts/BalsamiqSans-Bold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Assets/UI/grey_button04.png" type="Texture" id=3]
 [ext_resource path="res://Assets/UI/grey_button13.png" type="Texture" id=4]
-[ext_resource path="res://Assets/UI/arrow-UP.png" type="Texture" id=5]
+[ext_resource path="res://Assets/UI/arrow-button-png-2.png" type="Texture" id=5]
 [ext_resource path="res://Scenes/MainMenuButton.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Enemies/slimeBlue.png" type="Texture" id=7]
 [ext_resource path="res://Assets/player/platformChar_idle.png" type="Texture" id=8]
@@ -82,11 +82,11 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Controls/LeftArrow"]
-margin_left = 7.0
-margin_top = 33.0
-margin_right = 33.0
-margin_bottom = 59.0
-rect_rotation = -90.0
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 58.0
+margin_bottom = 58.0
+rect_rotation = -180.0
 texture = ExtResource( 5 )
 expand = true
 __meta__ = {
@@ -105,11 +105,10 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="Controls/RightArrow"]
-margin_left = 33.0
-margin_top = 7.0
-margin_right = 59.0
-margin_bottom = 33.0
-rect_rotation = 90.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 34.0
+margin_bottom = 34.0
 texture = ExtResource( 5 )
 expand = true
 __meta__ = {
