@@ -181,12 +181,15 @@ func move_and_fall(slowed : bool):
 	velocity = move_and_slide(velocity, Vector2.UP)
 
 func _on_Fallzone_body_entered(body):
-	get_tree().change_scene("res://Scenes/GameOver.tscn")
+	Global.life_loss()
+	if Global.lives > 0:
+		get_tree().reload_current_scene()
 
 func bounce():
 	velocity.y = JUMPFORCE * 0.5
 
 func hurt(var enemyposx):
+	Global.life_loss()
 	set_modulate(Color(1, 0.5, 0.5, 0.7))
 	velocity.y = JUMPFORCE * 0.3
 	
@@ -201,7 +204,7 @@ func hurt(var enemyposx):
 	$Timer.start()
 
 func _on_Timer_timeout():
-	get_tree().change_scene("res://Scenes/GameOver.tscn")
+	set_modulate(Color(1, 1, 1, 1))
 
 func _on_Area2D_body_entered(body):
 	on_ladder = true

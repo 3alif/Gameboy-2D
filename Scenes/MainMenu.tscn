@@ -146,12 +146,13 @@ __meta__ = {
 }
 
 [node name="Version" type="Label" parent="."]
-margin_left = 864.0
+margin_left = 880.0
 margin_right = 1024.0
 margin_bottom = 23.0
 custom_colors/font_color = Color( 0.517647, 0, 1, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "Version: 0.4 [Alpha]"
+text = "Version: 0.5 Beta"
+align = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
